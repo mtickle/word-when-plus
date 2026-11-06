@@ -259,8 +259,8 @@ export default function App() {
                       }
                     `}
                   >
-                    <h2 className="font-bold text-sm md:text-base leading-snug">
-                      {entry.title.replace('When I ', '').replace('When ', '')}
+                    <h2 className="font-bold text-lg md:text-base leading-snug">
+                      {entry.title}
                     </h2>
                   </button>
                 );
