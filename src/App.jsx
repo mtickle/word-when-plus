@@ -39,7 +39,7 @@ const ENTRIES = [
   },
   {
     id: 7,
-    title: "I fel like I don't measure up",
+    title: "I feel like I don't measure up",
     prayer: "Lord, when I feel like I'm not strong enough, smart enough, or good enough, remind me that Your grace is enough. You don't need me to be perfect; You work through my weakness.",
     scripture: '"And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness..." - 2 Corinthians 12:9'
   },
@@ -131,7 +131,7 @@ const ENTRIES = [
     id: 22,
     title: "I'm struggling with self-control",
     prayer: "Lord, help me think before I react and make wise decisions even when my emotions or impulses feel overwhelming. Remind me that You always provide a way through.",
-    scripture: ""
+    scripture: "No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it. - 1 Corinthians 10:13"
   },
   {
     id: 23,
@@ -143,7 +143,7 @@ const ENTRIES = [
     id: 24,
     title: "I feel awkward or out of place",
     prayer: "Lord, when I feel uncomfortable or out of place around others, remind me that I don't have to earn my spot in any room. You have already chosen me and called me Your own.",
-    scripture: ""
+    scripture: "But you are a chosen people, a royal priesthood, a holy nation, God’s special possession, that you may declare the praises of him who called you out of darkness into his wonderful light. - 1 Peter 2:9"
   },
   {
     id: 25,
@@ -206,11 +206,11 @@ export default function App() {
   const [selectedEntry, setSelectedEntry] = useState(null);
 
   // Optional: Check system preference on first load
-  useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setIsDarkMode(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  //     setIsDarkMode(true);
+  //   }
+  // }, []);
 
   return (
     <div className={`min-h-screen font-sans transition-colors duration-300 ${isDarkMode ? 'bg-slate-900' : 'bg-slate-100'}`}>
